@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Steam</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="responsive-header-content">
+        <div class="responsive-header-logo">
+          <a
+            href="https://store.steampowered.com/?snr=1_4_4__global-responsive-menu"
+          >
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/shared/images/responsive/header_logo.png"
+              height="36"
+              alt="STEAM"
+            />
+          </a>
+        </div>
+
+        <nav class="nav-links">
+          <a href="index.html" class="nav-link">Store</a>
+          <a href="https://store.steampowered.com/about/" class="nav-link"
+            >About</a
+          >
+          <a href="https://help.steampowered.com/en/" class="nav-link"
+            >Support</a
+          >
+        </nav>
+      </div>
+    </header>
+    <main>
+      <aside class="tools">
+        <div id="search-container">
+          <input type="text" id="search-input" placeholder="search" />
+          <a href="#" id="search-btn">
+            <img
+              src="https://store.cloudflare.steamstatic.com/public/images/v6/search_icon_btn.png"
+            />
+          </a>
+        </div>
+
+        <div class="genres">
+          <h4 class="title">Narrow by genre</h4>
+          <div class="genres-container"></div>
+        </div>
+
+        <div class="tags">
+          <h4 class="title">Narrow by tag</h4>
+          <div class="tags-container">
+            
+          </div>
+        </div>
+      </aside>
+      <section class="games-display-container">
+          <h2 id="game-grid-display-title">Featured Games</h2>
+        
+        <p id="error-message"></p>
+        <div id="game-details" class="modal">
+            <h2 id="detail-display-title"></h2>
+          <span id="close-modal">&times;</span>
+          <div class="game-detail-wrapper">
+            <img
+              class="detail-image"
+            />
+            <div class="detail-info">
+              
+            </div>
+          </div>
+          <div class="game-categories-wrapper">
+            <p id="game-categories">Categories: </p>
+          </div>
+        </div>
+        
+        <div class="game-grid">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
